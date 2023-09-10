@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.netopyr.reduxfx</groupId>
+    <artifactId>reduxfx2023-parent</artifactId>
+    <version>0.4.2-SNAPSHOT</version>
+
+    <name>ReduxFX-2023</name>
+    <description>Functional reactive programming with JavaFX</description>
+    <url>https://github.com/netopyr/reduxfx</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <commons.lang3.version>3.6</commons.lang3.version>
+        <vavr.version>0.9.0</vavr.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <reactivestreams.version>1.0.0</reactivestreams.version>
+        <reactivex.version>2.1.2</reactivex.version>
+        <junit.version>5.9.2</junit.version>
+    </properties>
+
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Michael Heinrichs</name>
+            <email>michael.heinrichs@netopyr.com</email>
+            <url>https://netopyr.com</url>
+        </developer>
+    </developers>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>reduxfx-store</module>
+        <module>reduxfx-view</module>
+        <module>reduxfx-jfoenix</module>
+        <module>reduxfx-fontawesomefx</module>
+        <module>reduxfx-fxml</module>
+        <module>reduxfx-all</module>
+
+        <module>examples/colorchooser</module>
+        <module>examples/menus</module>
+        <module>examples/screenswitch</module>
+        <module>examples/todomvc</module>
+        <module>examples/fxml</module>
+        <module>examples/helloworld</module>
+        <module>examples/treeview</module>
+    </modules>
+
+    <!--    <dependencies>-->
+    <!--        <dependency>-->
+    <!--            <groupId>org.openjfx</groupId>-->
+    <!--            <artifactId>javafx-controls</artifactId>-->
+    <!--            <version>17.0.6</version>-->
+    <!--        </dependency>-->
+    <!--        <dependency>-->
+    <!--            <groupId>org.openjfx</groupId>-->
+    <!--            <artifactId>javafx-fxml</artifactId>-->
+    <!--            <version>17.0.6</version>-->
+    <!--        </dependency>-->
+
+    <!--        <dependency>-->
+    <!--            <groupId>org.junit.jupiter</groupId>-->
+    <!--            <artifactId>junit-jupiter-api</artifactId>-->
+    <!--            <version>${junit.version}</version>-->
+    <!--            <scope>test</scope>-->
+    <!--        </dependency>-->
+    <!--        <dependency>-->
+    <!--            <groupId>org.junit.jupiter</groupId>-->
+    <!--            <artifactId>junit-jupiter-engine</artifactId>-->
+    <!--            <version>${junit.version}</version>-->
+    <!--            <scope>test</scope>-->
+    <!--        </dependency>-->
+    <!--    </dependencies>-->
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.netopyr.reduxfx</groupId>
+                <artifactId>reduxfx-store</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.netopyr.reduxfx</groupId>
+                <artifactId>reduxfx-view</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.netopyr.reduxfx</groupId>
+                <artifactId>reduxfx-fxml</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.netopyr.reduxfx</groupId>
+                <artifactId>reduxfx-fontawesomefx</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.netopyr.reduxfx</groupId>
+                <artifactId>reduxfx-jfoenix</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.netopyr.reduxfx</groupId>
+                <artifactId>reduxfx-all</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vavr</groupId>
+                <artifactId>vavr</artifactId>
+                <version>${vavr.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.reactivestreams</groupId>
+                <artifactId>reactive-streams</artifactId>
+                <version>${reactivestreams.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.reactivex.rxjava2</groupId>
+                <artifactId>rxjava</artifactId>
+                <version>${reactivex.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-controls</artifactId>
+                <version>17.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-fxml</artifactId>
+                <version>17.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-graphics</artifactId>
+                <version>17.0.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.11.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <useReleaseProfile>false</useReleaseProfile>
+                    <releaseProfiles>release</releaseProfiles>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <executions>
+                    <execution>
+                        <!-- Default configuration for running with: mvn clean javafx:run -->
+                        <id>default-cli</id>
+                        <configuration>
+                            <mainClass>
+                                com.netopyr.reduxfx.examples.todo/com.netopyr.reduxfx.examples.todo.TodoMVC
+                            </mainClass>
+                            <launcher>app</launcher>
+                            <jlinkZipName>app</jlinkZipName>
+                            <jlinkImageName>app</jlinkImageName>
+                            <noManPages>true</noManPages>
+                            <stripDebug>true</stripDebug>
+                            <noHeaderFiles>true</noHeaderFiles>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>reduxfx2023-parent</artifactId>
+        <groupId>com.netopyr.reduxfx</groupId>
+        <version>0.4.2-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>menus</artifactId>
+    <groupId>com.netopyr.reduxfx.examples</groupId>
+
+    <name>ReduxFX: Menus Examples</name>
+    <description>Example demonstrating a menu, a popup menu, and a dialog</description>
+    <url>https://github.com/netopyr/reduxfx</url>
+
+    <properties>
+        <sonar.skip>true</sonar.skip>
+        <maven.deploy.skip>true</maven.deploy.skip>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
+        <maven.source.skip>true</maven.source.skip>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.netopyr.reduxfx</groupId>
+            <artifactId>reduxfx-store</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netopyr.reduxfx</groupId>
+            <artifactId>reduxfx-view</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-graphics</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
