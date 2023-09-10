@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.netopyr.reduxfx</groupId>
-    <artifactId>reduxfx2023-parent</artifactId>
-    <version>0.4.2-SNAPSHOT</version>
+    <groupId>com.raoulsson.reduxfx</groupId>
+    <artifactId>reduxfx-2023-parent</artifactId>
+    <version>0.4.2</version>
 
     <name>ReduxFX-2023</name>
     <description>Functional reactive programming with JavaFX</description>
@@ -87,32 +87,32 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.netopyr.reduxfx</groupId>
+                <groupId>com.raoulsson.reduxfx</groupId>
                 <artifactId>reduxfx-store</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.netopyr.reduxfx</groupId>
+                <groupId>com.raoulsson.reduxfx</groupId>
                 <artifactId>reduxfx-view</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.netopyr.reduxfx</groupId>
+                <groupId>com.raoulsson.reduxfx</groupId>
                 <artifactId>reduxfx-fxml</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.netopyr.reduxfx</groupId>
+                <groupId>com.raoulsson.reduxfx</groupId>
                 <artifactId>reduxfx-fontawesomefx</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.netopyr.reduxfx</groupId>
+                <groupId>com.raoulsson.reduxfx</groupId>
                 <artifactId>reduxfx-jfoenix</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.netopyr.reduxfx</groupId>
+                <groupId>com.raoulsson.reduxfx</groupId>
                 <artifactId>reduxfx-all</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -238,7 +238,8 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.netopyr.reduxfx.examples.todo/com.netopyr.reduxfx.examples.todo.TodoMVC
+<!--                                com.raoulsson.reduxfx.examples.todo.TodoMVC-->
+                                com.raoulsson.reduxfx.examples.screenswitch.ScreenSwitch
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

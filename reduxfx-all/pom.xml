@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>reduxfx2023-parent</artifactId>
-        <groupId>com.netopyr.reduxfx</groupId>
-        <version>0.4.2-SNAPSHOT</version>
+        <artifactId>reduxfx-2023-parent</artifactId>
+        <groupId>com.raoulsson.reduxfx</groupId>
+        <version>0.4.2</version>
     </parent>
 
     <artifactId>reduxfx-all</artifactId>
@@ -24,23 +24,23 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-store</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-view</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-fxml</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-fontawesomefx</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-jfoenix</artifactId>
         </dependency>
     </dependencies>

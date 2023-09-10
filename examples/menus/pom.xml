@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>reduxfx2023-parent</artifactId>
-        <groupId>com.netopyr.reduxfx</groupId>
-        <version>0.4.2-SNAPSHOT</version>
+        <artifactId>reduxfx-2023-parent</artifactId>
+        <groupId>com.raoulsson.reduxfx</groupId>
+        <version>0.4.2</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>menus</artifactId>
-    <groupId>com.netopyr.reduxfx.examples</groupId>
+    <groupId>com.raoulsson.reduxfx.examples</groupId>
 
     <name>ReduxFX: Menus Examples</name>
     <description>Example demonstrating a menu, a popup menu, and a dialog</description>
@@ -25,11 +25,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-store</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.netopyr.reduxfx</groupId>
+            <groupId>com.raoulsson.reduxfx</groupId>
             <artifactId>reduxfx-view</artifactId>
         </dependency>
         <dependency>
